@@ -14,9 +14,14 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Add your custom css -->
   <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="burgerSection/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
 </head>
 
 <body>
+
+  
   <!-- Nav Section -->
   <div class="nav">
     <div class="container">
@@ -58,6 +63,25 @@
     </div>
   </div>
   <!-- End Nav Section -->
+
+  <!-- Interactive burger section -->
+  <section id="sectionone" class="screen">
+    <div id="scene">
+      <div data-depth="0.1" class="bg">
+        <img src="burgerSection/images/background.png" alt="" />
+      </div>
+      <div data-depth="1.2" class="burger">
+        <img src="burgerSection/images/burger.png" alt="" />
+      </div>
+      <div data-depth="0.1" class="text">
+        <h1>MIRE SE VINI</h1>
+      </div>
+      <div data-depth="0.4" class="mid">
+        <img src="burgerSection/images/underPic.png" alt="" />
+      </div>
+    </div>
+  </section>
+
   <!-- Hero Section -->
   <section id="hero">
     <div class="container">
@@ -587,6 +611,11 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom script -->
   <script src="./main.js"></script>
+  <!-- Burger section scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="burgerSection/index.js" type="text/javascript"></script>
 </body>
 
 </html>
