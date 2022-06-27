@@ -53,6 +53,7 @@
               <li><a class="nav__link" href="./about.html">About</a></li>
               <li><a class="nav__link" href="./contact.html">Contact</a></li>
               <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+              <li><a class="nav__link" href="./kids-menu.html">Kid's Menu</a></li>
             </div>
           </ol>
         </nav>
@@ -67,7 +68,7 @@
       <div class="ourStory__wrapper">
 
         <div class="ourStory__img">
-          <img src="./images/ourStoryImg.png" alt="shaif's cuisine">
+          <img name="slide" id="slide" alt="shaif's cuisine">
         </div>
         <div class="ourStory__info">
           <h3 class="ourStory__title">
@@ -242,6 +243,27 @@
   <!-- End Footer -->
 
   <!-- aos scripts -->
+  <script>
+    var i = 0;
+    var  images  = [];
+    var time = 2100;
+    images[0] = './images/ourStoryImg.png';
+    images[1] = './images/ourGoals_img2.png';
+    images[2] = './images/ourGoals_img3.png';
+    function changeImg() {
+      document.getElementById('slide').src = images[i];
+      if( i <images.length -1) {
+        i++;
+      }
+      else {
+        i=o;
+      }
+      setTimeout("changeImg()",time); 
+        
+    }
+    window.onload = changeImg;
+
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom scripts -->
   <script src="./main.js"></script>
