@@ -103,6 +103,11 @@ body{
   background: #265DF2;
 }
 
+.button-link{
+  color: #FFF;
+}
+
+
 .swiper-navBtn{
   color: #6E93f7;
   transition: color 0.3s ease;
