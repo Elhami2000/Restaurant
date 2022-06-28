@@ -9,7 +9,7 @@
 }
 body{
   min-height: 100vh;
-  display:grid;
+  display:block;
   align-items: center;
   justify-content: space-evenly;
   background-color: #EFEFEF;
