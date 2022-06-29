@@ -12,6 +12,9 @@ p {
     font-family: 'Karla', sans-serif;
     padding: 7%;
 }
+.games {
+	background: var(--lightGreen-2);
+}
 .blue{
 	color: blue;
 	
@@ -58,3 +61,31 @@ p {
 	  font-size: 80px;
 	  font-family: 'Yellowtail', cursive;
 	}
+		/* wrapper */
+		.wrapperMenu {
+			display: grid;
+			grid-template-columns: 30% 30% 30% ;
+			/* grid-column-gap: 1em; */
+		margin-top: 7%;
+		justify-items: center;
+		}
+		.wrapperMenu img:hover {
+			transform: scale(1.2);
+		transition: transform 0.8s;
+		box-shadow: #ff3300;
+		}
+		.wrapperMenu img {
+			width: 36%;
+		}
+		@media only screen 
+		and (min-device-width: 320px) 
+		and (max-device-width: 480px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+	  #dishGrid {
+		display: none;
+	  }
+	
+	#PlayGameh2 {
+		display: none;
+	  }
+	  }
