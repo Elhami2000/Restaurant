@@ -6,13 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Yellowtail&display=swap" rel="stylesheet">
-  <title>Menu | Shaif's Cuisine</title>
+  <title>Menu | TEFFL Cuisine</title>
   <style>
-    iframe{
+    iframe {
       height: 250px;
     }
   </style>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="menuSection/sliderMenu/css/swiper-bundle.min.css">
+  <!-- Slider CSS-->
+  <link rel="stylesheet" href="menuSection/sliderMenu/css/style.css">
+
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
@@ -20,7 +24,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Add your custom css -->
   <link rel="stylesheet" href="./menu.css">
- 
+
 </head>
 
 <body>
@@ -30,7 +34,7 @@
     <div class="container">
       <div class="nav__wrapper">
         <a href="./index.html" class="logo">
-          <img src="./images/logo.svg" alt="shaif's cuisine">
+          <img src="./images/logo.svg" alt="TEFFL cuisine">
         </a>
         <nav>
           <div class="nav__icon">
@@ -66,7 +70,8 @@
     </div>
   </div>
   <!-- End Nav Section -->
-  <iframe src='https://my.spline.design/saltpeppercopy-adf58328762d03bd19332ac9964a61ac/' frameborder='0' width='100%' height='100%'></iframe>
+  <iframe src='https://my.spline.design/saltpeppercopy-adf58328762d03bd19332ac9964a61ac/' frameborder='0' width='100%'
+    height='100%'></iframe>
 
   <!-- page Title -->
   <section id="page__title" data-aos="fade-up">
@@ -167,179 +172,347 @@
   </section>
   <!-- End Top Dishes -->
   <!-- Breakfast Dishes -->
-  <section id="dishGrid" data-aos="fade-up">
+  <section id="ourSpecials" data-aos="fade-up">
     <div class="container">
       <h2 class="dishGrid__title">
         Breakfast
       </h2>
-      <div class="dishGrid__wrapper">
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/breakfast/breakfast1.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-1.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/breakfast/breakfast1.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-3.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                <button class="button"><a class="button-link" href="menuSection/breakfast/breakfast2.html">View Food</a></button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-7.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/breakfast/breakfast3.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-4.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/breakfast/breakfast4.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-6.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/breakfast/breakfast5.html">View Food</a></button>
+                </div>
             </div>
           </div>
         </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/breakfast/breakfast2.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/breakfast/breakfast3.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/breakfast/breakfast4.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/breakfast/breakfast5.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
   </section>
+  </div>
   <!-- End Breakfast Dishes -->
+
   <!-- Lunch Dishes -->
-  <section id="dishGrid" data-aos="fade-up">
+  <section id="ourSpecials" data-aos="fade-up">
     <div class="container">
       <h2 class="dishGrid__title">
         Lunch
       </h2>
-      <div class="dishGrid__wrapper">
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/lunch/lunch1.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-4.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/lunch/lunch1.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-6.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/lunch/lunch2.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-2.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/lunch/lunch3.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-1.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/lunch/lunch4.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-3.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/lunch/lunch5.html">View Food</a></button>
+                </div>
             </div>
           </div>
         </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/lunch/lunch2.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/lunch/lunch3.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/lunch/lunch4.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="./images/food-1.png" alt="food img">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              <a class="dishGrid__item__title" href="menuSection/lunch/lunch5.html">
-              Hot Green Bowl</a>
-            </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
-            <div class="dishGrid__item__stars">
-              <img src="./images/3star.png" alt="3 star">
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
   </section>
+  </div>
   <!-- End Lunch Dishes -->
+  <section id="ourSpecials" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Dinner
+      </h2>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-5.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/dinner/dinner1.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-4.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/dinner/dinner2.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-3.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/dinner/dinner3.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-2.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+                  <button class="button"><a class="button-link" href="menuSection/dinner/dinner4.html">View Food</a></button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/food-1.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Hot Green Bowl</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="dishGrid__item__stars">
+                    <img src="./images/3star.png" alt="3 star">
+                  </div>
+
+                  <button class="button"><a class="button-link" href="menuSection/dinner/dinner5.html">View Food</a></button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  </section>
+  </div>
   <!-- Dinner Dishes -->
-  <section id="dishGrid" data-aos="fade-up">
+  <!-- End Dinner Dishes -->
+  <!--<section id="dishGrid" data-aos="fade-up">
     <div class="container">
       <h2 class="dishGrid__title">
         Dinner
@@ -424,21 +597,18 @@
     </div>
   </section>
 
+  <div class="timer" >
+    <p id="root"></p>
+  </div>
+    </div> -->
 
-    </div>    
-      <h2 id="newDish">New dish coming out in:</h2>
-    <div class="counter" >
-
-      <div id="root"></div>
-    </div>
-  <!-- End Dinner Dishes -->
   <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__col1">
           <div class="footer__logo">
-            <img src="./images/logo.svg" alt="shaif's cuisine">
+            <img src="./images/logo.svg" alt="TEFFL cuisine">
           </div>
           <p class="footer__desc">
             Fresh and delicious traditional Bangladeshi food to delight the whole family.
@@ -479,45 +649,6 @@
             </ol>
           </div>
         </div>
-        <div class="nav">
-          <div class="container">
-            <div class="nav__wrapper">
-              <a href="./index.html" class="logo">
-                <img src="./images/logo.svg" alt="shaif's cuisine">
-              </a>
-              <nav>
-                <div class="nav__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                  </svg>
-                </div>
-                <div class="nav__bgOverlay"></div>
-                <ul class="nav__list">
-                  <div class="nav__close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </div>
-                  <div class="nav__list__wrapper">
-      
-                    <li><a class="nav__link" href="./index.html">Home</a></li>
-                    <li><a class="nav__link" href="./menu.html">Menu</a></li>
-                    <li><a class="nav__link" href="./about.html">About</a></li>
-                    <li><a class="nav__link" href="./contact.html">Contact</a></li>
-                    <li><a class="nav__link" href="./kids-menu.html">Kid's Menu</a></li>
-                    <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
-                  </div>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-       
-
         <div class="footer__col2">
           <h3 class="footer__text__title">
             Links
@@ -578,38 +709,27 @@
       </div>
     </div>
   </footer>
-  
+
   <div id="copyright">
     <div class="container">
       <p class="copyright__text">
-        © copyright 2021 Shaif’s Cuisine | All rights reserved
+        © copyright 2021 TEFFL Cuisine | All rights reserved
       </p>
     </div>
   </div>
- 
+
   <!-- End Footer -->
   <!-- aos script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom script -->
   <script src="./main.js"></script>
-  <script>
-                  var countDownDate = new Date("july8, 2022 12:00:00").getTime();
-var x =setInterval(function(){
-  var now = new Date().getTime();
-  var distance= countDownDate- now;
-  var days = Math.floor(distance/(1000 * 60 *60*24));
-  var hours = Math.floor((distance%(1000*60*60*24))/ (1000*60*60)) ;
-  var minutes  = Math.floor((distance%(1000*60 *60))/(1000*60));
-  var seconds  = Math.floor((distance%(1000*60 ))/(1000));
-
-  document.getElementById("root").innerHTML = days+"Days "+hours+"Hours "+minutes+"Minutes "+seconds+"Seconds";
-  if(distance<0){
-    clearInterval(x);
-    document.getElementById("root").innerHTML = "time expired";
-  }
-},1000);
-  </script>
 
 </body>
+
+<!-- Swiper JS -->
+<script src="menuSection/sliderMenu/js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="menuSection/sliderMenu/js/script.js"></script>
 
 </html>

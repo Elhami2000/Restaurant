@@ -1,0 +1,45 @@
+@keyframes capAnimation {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes tesiMove {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(2deg);
+    }
+
+    33% {
+        transform: rotate(4deg);
+    }
+
+    66% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
