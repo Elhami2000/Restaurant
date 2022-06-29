@@ -64,8 +64,8 @@
     width: 500px;
     height: 500px;
     position: absolute;
-    left: 34vw;
-    top: 25vh;
+    left: 50vw;
+    top: 10vh;
     z-index: 1;
     filter: brightness(0.7);
   }

@@ -1,0 +1,91 @@
+p {
+    text-align: center;
+    font-size: 85px;
+}
+/* body {
+    background-color: #000;
+    color: white;
+} */
+.kidsMenu  {
+  font-size: 50px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    padding: 7%;
+}
+.games {
+	background: var(--lightGreen-2);
+}
+.blue{
+	color: blue;
+	
+  }
+  h2{
+	font-family: 'Karla', sans-serif;
+	 margin: auto;
+	 margin-top: 50px;
+	 margin-bottom: 50px;
+	 text-align: center;
+	 color:royalblue;
+	 text-transform: uppercase;
+	 font-size: 30px; 
+	}
+	#ballon-gallery div {
+	  background: #ff3300;
+	  height: 121px;
+	  width: 119px;
+	  text-align: center ;
+	  color: #ff3300;
+	  font-size: 40px;
+	  font-family: sans-serif;
+	  border-radius: 100%;
+	  margin-top: 20px;
+	  display: inline-block;
+	  float: left;
+	  margin: 2.5px 5px 2.5px 0px;
+	}
+	#ballon-gallery div:nth-child(2n) {
+	  background: #ffce00;
+	  color: #ffce00;
+	}
+	#ballon-gallery div:nth-child(6n) {
+	  background: greenyellow;
+	  color: greenyellow;
+	}
+	#ballon-gallery div:nth-child(4n) {
+	  background: pink;
+	  color: pink;
+	}
+	#yay-no-balloons {
+	  display: none;
+	  color: #ff3300;
+	  font-size: 80px;
+	  font-family: 'Yellowtail', cursive;
+	}
+		/* wrapper */
+		.wrapperMenu {
+			display: grid;
+			grid-template-columns: 30% 30% 30% ;
+			/* grid-column-gap: 1em; */
+		margin-top: 7%;
+		justify-items: center;
+		}
+		.wrapperMenu img:hover {
+			transform: scale(1.2);
+		transition: transform 0.8s;
+		box-shadow: #ff3300;
+		}
+		.wrapperMenu img {
+			width: 36%;
+		}
+		@media only screen 
+		and (min-device-width: 320px) 
+		and (max-device-width: 480px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+	  #dishGrid {
+		display: none;
+	  }
+	
+	#PlayGameh2 {
+		display: none;
+	  }
+	  }

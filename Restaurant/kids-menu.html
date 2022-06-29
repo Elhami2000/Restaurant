@@ -4,16 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./kidsMenu.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./globalStyles.css">
+    
+    <!-- <link rel="stylesheet" href="./globalStyles.css"> -->
+    <link rel="stylesheet" href="./components.css">
     <title>Kids-Menu</title>
     <style>
+      
         iframe {
-            height: 1200px;
+            height: 1000px;
         }
     </style>
 </head>
-<body>
-    <iframe src='https://my.spline.design/molang3dcopy-cb885f0dd67108164d5d334d061e058a/' frameborder='0' width='100%' height='100%'></iframe>
+<body style="background: white !important;">
+ 
+    <div class="nav" style="background: var(--lightGreen-2);">
+        <div class="container">
+          <div class="nav__wrapper">
+            <a href="./index.html" class="logo">
+              <img src="./images/logo.svg" alt="TEFFL cuisine">
+            </a>
+            <nav>
+              <div class="nav__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-menu">
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </div>
+              <div class="nav__bgOverlay"></div>
+              <ul class="nav__list">
+                <div class="nav__close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </div>
+                <div class="nav__list__wrapper">
+    
+                  <li><a class="nav__link" href="./index.html">Home</a></li>
+                  <li><a class="nav__link" href="./menu.html">Menu</a></li>
+                  <li><a class="nav__link" href="./about.html">About</a></li>
+                  <li><a class="nav__link" href="./contact.html">Contact</a></li>
+                  <li><a class="nav__link" href="./kids-menu.html">Kid's Menu</a></li>
+                  <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    
+    <!-- <iframe src='https://my.spline.design/molang3dcopy-cb885f0dd67108164d5d334d061e058a/' frameborder='0' width='100%' height='100%'></iframe>-->
+    <div class="kidsMenu">
+      <h1>Our Specials:</h1>
+      <div class="wrapperMenu">
+    <img src="./images/kidMenu1.png"/>
+    <img src="./images/kidMenu2.jpeg"/>
+    <img src="./images/kidMenu1.png"/>
+    </div>
+    </div>
+    <div class="kidsMenu games">
+      <h1>Play our fun game</h1>
+    </div>
 
     <section id="dishGrid" data-aos="fade-up">
         <div class="container">
@@ -51,7 +117,100 @@
               </div>
             </div>
           </div>
-          </section>
-          <script src="../balloon.js"></script>
+          </section> 
+          
+          <script>
+
+
+//s
+var balloon0 = document.getElementById("balloon0");
+var balloon1 = document.getElementById("balloon1");
+var balloon2 = document.getElementById("balloon2");
+var balloon3= document.getElementById("balloon3");
+var balloon4 = document.getElementById("balloon4");
+var balloon5 = document.getElementById("balloon5");
+var balloon6 = document.getElementById("balloon6");
+var balloon7 = document.getElementById("balloon7");
+var balloon8 = document.getElementById("balloon8");
+var balloon9 = document.getElementById("balloon9");
+var balloon10 = document.getElementById("balloon10");
+var balloon11 = document.getElementById("balloon11");
+var balloon12 = document.getElementById("balloon12");
+var balloon13 = document.getElementById("balloon13");
+var balloon14 = document.getElementById("balloon14");
+var balloon15 = document.getElementById("balloon15");
+var balloon16 = document.getElementById("balloon16");
+var balloon17 = document.getElementById("balloon17");
+var balloon18 = document.getElementById("balloon18");
+var balloon19 = document.getElementById("balloon19");
+var balloon20 = document.getElementById("balloon20");
+var balloon21 = document.getElementById("balloon21");
+var balloon22 = document.getElementById("balloon22");
+var balloon23 = document.getElementById("balloon23");
+var yay = document.getElementById("yay-no-balloons");
+
+function balloonPopper(balloonVariable){
+    balloonVariable.addEventListener("mouseover", popBalloon);
+    function popBalloon(){
+        if(balloonVariable.style.background ==="none"){
+            balloonVariable.innerText= "";
+        }
+        else{
+            balloonVariable.innerText= "POP";
+            balloonVariable.style.background= "none";
+
+        }
+    }
+    balloonVariable.addEventListener("mouseout", popIsOver, false);
+    function popIsOver() {
+        balloonVariable.innerText= "";
+    }
+};
+balloonPopper(balloon0);
+balloonPopper(balloon1);
+balloonPopper(balloon2);
+balloonPopper(balloon3);
+balloonPopper(balloon4);
+balloonPopper(balloon5);
+balloonPopper(balloon6);
+balloonPopper(balloon7);
+balloonPopper(balloon8);
+balloonPopper(balloon9);
+balloonPopper(balloon10);
+balloonPopper(balloon11);
+balloonPopper(balloon12);
+balloonPopper(balloon13);
+balloonPopper(balloon14);
+balloonPopper(balloon15);
+balloonPopper(balloon16);
+balloonPopper(balloon17);
+balloonPopper(balloon18);
+balloonPopper(balloon19);
+balloonPopper(balloon20);
+balloonPopper(balloon21);
+balloonPopper(balloon22);
+balloonPopper(balloon23);
+
+document.addEventListener("mouseover", noBalloons, false);
+function noBalloons() {
+    if(balloon0.style.background==="none" &&
+    balloon1.style.background==="none"&&balloon2.style.background==="none" 
+    &&balloon3.style.background==="none" &&balloon4.style.background==="none"
+     &&balloon5.style.background==="none" &&balloon6.style.background==="none"
+      &&balloon7.style.background==="none" &&balloon15.style.background==="none"
+       &&balloon8.style.background==="none" &&balloon16.style.background==="none"
+        &&balloon9.style.background==="none" &&balloon17.style.background==="none"
+         &&balloon10.style.background==="none" &&balloon18.style.background==="none"
+          &&balloon11.style.background==="none" &&balloon19.style.background==="none"
+           &&balloon12.style.background==="none" &&balloon20.style.background==="none"
+            &&balloon13.style.background==="none" &&balloon21.style.background==="none"
+             &&balloon14.style.background==="none" &&balloon22.style.background==="none"  
+              &&balloon23.style.background==="none"  ) {
+yay.style.display= "block";
+// window.scroll(0,0);
+    }
+}
+          </script>
+          <script src="./main.js"></script>
 </body>
-</html>
+</html> 
