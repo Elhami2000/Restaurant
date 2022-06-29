@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Yellowtail&display=swap" rel="stylesheet">
   <title>Menu | Shaif's Cuisine</title>
   <style>
     iframe{
@@ -423,11 +424,13 @@
     </div>
   </section>
 
-  <div class="timer" >
-    <p id="root"></p>
-  </div>
+
+    </div>    
+      <h2 id="newDish">New dish coming out in:</h2>
+    <div class="counter" >
+
+      <div id="root"></div>
     </div>
- 
   <!-- End Dinner Dishes -->
   <!-- Footer -->
   <footer>
@@ -476,6 +479,45 @@
             </ol>
           </div>
         </div>
+        <div class="nav">
+          <div class="container">
+            <div class="nav__wrapper">
+              <a href="./index.html" class="logo">
+                <img src="./images/logo.svg" alt="shaif's cuisine">
+              </a>
+              <nav>
+                <div class="nav__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="nav__bgOverlay"></div>
+                <ul class="nav__list">
+                  <div class="nav__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="nav__list__wrapper">
+      
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li><a class="nav__link" href="./menu.html">Menu</a></li>
+                    <li><a class="nav__link" href="./about.html">About</a></li>
+                    <li><a class="nav__link" href="./contact.html">Contact</a></li>
+                    <li><a class="nav__link" href="./kids-menu.html">Kid's Menu</a></li>
+                    <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+       
+
         <div class="footer__col2">
           <h3 class="footer__text__title">
             Links
@@ -550,6 +592,23 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom script -->
   <script src="./main.js"></script>
+  <script>
+                  var countDownDate = new Date("july8, 2022 12:00:00").getTime();
+var x =setInterval(function(){
+  var now = new Date().getTime();
+  var distance= countDownDate- now;
+  var days = Math.floor(distance/(1000 * 60 *60*24));
+  var hours = Math.floor((distance%(1000*60*60*24))/ (1000*60*60)) ;
+  var minutes  = Math.floor((distance%(1000*60 *60))/(1000*60));
+  var seconds  = Math.floor((distance%(1000*60 ))/(1000));
+
+  document.getElementById("root").innerHTML = days+"Days "+hours+"Hours "+minutes+"Minutes "+seconds+"Seconds";
+  if(distance<0){
+    clearInterval(x);
+    document.getElementById("root").innerHTML = "time expired";
+  }
+},1000);
+  </script>
 
 </body>
 
