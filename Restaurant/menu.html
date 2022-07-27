@@ -740,7 +740,7 @@
 
 <!-- JavaScript -->
 <script>
-  var countDownDate = new Date("july8, 2022 12:00:00").getTime();
+  var countDownDate = new Date("august8, 2022 12:00:00").getTime();
 var x =setInterval(function(){
 var now = new Date().getTime();
 var distance= countDownDate- now;
@@ -749,7 +749,7 @@ var hours = Math.floor((distance%(1000*60*60*24))/ (1000*60*60)) ;
 var minutes  = Math.floor((distance%(1000*60 *60))/(1000*60));
 var seconds  = Math.floor((distance%(1000*60 ))/(1000));
 
-document.getElementById("root").innerHTML = days+"Days "+hours+"Hours "+minutes+"Minutes "+seconds+"Seconds";
+document.getElementById("root").innerHTML = days+" days, "+hours+" hours, "+minutes+" minutes "+seconds+" seconds";
 if(distance<0){
 clearInterval(x);
 document.getElementById("root").innerHTML = "time expired";
