@@ -307,7 +307,7 @@
 }
 @media only screen and (min-width: 768px) {
 	.eventsMedia__wrapper {
-		gap: 2rem;
+		gap: 10rem;
 	}
 	.eventsMedia__1__playButton {
 		max-width: 100px;
